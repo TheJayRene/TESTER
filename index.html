@@ -1,62 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-	<head>
-		<title>Left Sidebar - Strongly Typed by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="left-sidebar is-preload">
-		<div id="page-wrapper">
-
-			<!-- Header -->
-				<section id="header">
-					<div class="container">
-
-						<!-- Logo -->
-							<h1 id="logo"><a href="index.html">Make It Jay Rene</a></h1>
-							<p>Aiming to provide you with:<br/>
-							   Educational Resources: Easy-to-understand information about symptoms, treatment options, and lifestyle adjustments.<br/>
-							   Community Support: A safe place to connect with others who share your experiences, foster friendships, and provide encouragement.<br/>
-							   Wellness Guidance: Tips on managing your health, embracing self-care, and finding balance in your life.<br/>
-							   Latest Updates: News about medical advancements, research breakthroughs, and advocacy efforts related to PCOS, HS, and Endometriosis.</p>
-
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li><a class="icon solid fa-home" href="index.html"><span>Home</span></a></li>
-									<li>
-										<a href="#" class="icon fa-chart-bar"><span>About</span></a>
-										<ul>
-											<li><a href="#">Make It Jay Rene</a></li>
-											<li><a href="#">PCOS (Polycystic Ovarian Syndrome)</a></li>
-											<li><a href="#">HS (Hidradenitis Suppurativa)</a></li>
-											<li>
-												<a href="#">Endometriosis</a>
-											
-											</li>
-											<li><a href="#">Group Discussions/Support</a></li>
-										</ul>
-									</li>
-									<li><a class="icon solid fa-cog" href="left-sidebar.html"><span>Sign Up</span></a></li>
-									<li><a class="icon solid fa-retweet" href="right-sidebar.html"><span>My Profile</span></a></li>
-									<li><a class="icon solid fa-sitemap" href="no-sidebar.html"><span>Contact Us</span></a></li>
-								</ul>
-							</nav>
-
-					</div>
-				</section>
-	<section id="main">
-					<div class="container">
-						<div class="row">
-
-							<!-- Sidebar -->
-								<div id="sidebar" class="col-4 col-12-medium">
-
-								
-								</div>
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up</title>
@@ -69,6 +13,12 @@
       align-items: center;
       height: 100vh;
       margin: 0;
+      flex-direction: column;
+    }
+    header {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
     }
     .signup-container {
       background: white;
@@ -110,108 +60,28 @@
   </style>
 </head>
 <body>
+  <header>MyWebsite</header>
   <div class="signup-container">
     <h2>Create an Account</h2>
     <form>
       <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required>
       </div>
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required>
       </div>
       <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+        <label for="nickname">Nickname (optional)</label>
+        <input type="text" id="nickname" name="nickname">
+      </div>
+      <div class="form-group">
+        <label for="email">Gmail</label>
+        <input type="email" id="email" name="email" required pattern=".+@gmail\.com" title="Only Gmail addresses are allowed">
       </div>
       <button type="submit">Sign Up</button>
     </form>
   </div>
 </body>
-</html>
-<section id="footer">
-					<div class="container">
-						<header>
-							<h2>Questions or comments? <strong>Get in touch:</strong></h2>
-						</header>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<section>
-									<form method="post" action="#">
-										<div class="row gtr-50">
-											<div class="col-6 col-12-small">
-												<input name="name" placeholder="Name" type="text" />
-											</div>
-											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message"></textarea>
-											</div>
-											<div class="col-12">
-												<a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
-											</div>
-										</div>
-									</form>
-								</section>
-							</div>
-							<div class="col-6 col-12-medium">
-								<section>
-									<p>Don't be afraid to reach out if you have any additional questions! You can also reach out to your fellow peers in the Group Discussion/Support Page under the <strong>About</strong>tab</p>
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon solid fa-home">
-													325 Central Ave,<br />
-													White Plains, NY 10606<br />
-													USA
-												</li>
-												<li class="icon solid fa-phone">
-													(914) 429-2301
-												</li>
-												<li class="icon solid fa-envelope">
-													<a href="#">thejayrene@gmail.com</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon brands fa-twitter">
-													<a href="#">@TheJayRene</a>
-												</li>
-												<li class="icon brands fa-instagram">
-													<a href="#">@makeitjayrene</a>
-												</li>
-												<li class="icon brands fa-dribbble">
-													<a href="#">dribbble.com/TheJayRene</a>
-												</li>
-												<li class="icon brands fa-facebook-f">
-													<a href="#">@ Make It Jay Rene</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</section>
-							</div>
-						</div>
-					</div>
-					<div id="copyright" class="container">
-						<ul class="links">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</section>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
